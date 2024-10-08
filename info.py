@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '1755897'))
-API_HASH = environ.get('API_HASH', 'bba5f8a638fed3a66cc387da3244a24c')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6545381736:AAFzeAgqCD9LdBUa10hvlQU05hRH_BpYShU")
+API_ID = int(environ.get('API_ID', ' 16582302'))
+API_HASH = environ.get('API_HASH', '336ae5acc37e4031e98ca682557cca66')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6589241609:AAEloFnJBjm2KxOByB--NSuMKI4U5w7QWPU")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -49,26 +49,26 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
-SHORTLINK_API = environ.get('SHORTLINK_API', '')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Shrinkearn.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '55f4c7d964ebb8ef7bf3dda75185e4aca870c285')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Film_Freakers')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Films_4u')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/FF_help')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+xXTTgPD9oa02ZTll')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/benzmovies')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/howtosolvelinks/4')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Film_Freakers')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001942699601'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Benzmovies')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>{file_caption}</b> \n\n<b>ᴊᴏɪɴ ɴᴏᴡ: [Our Channel](https://t.me/Films_4u)</b>\n<b>Instagram: [Subscribe](https://www.instagram.com/film_freakers/)</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>{file_caption}</b> \n\n<b>ᴊᴏɪɴ ɴᴏᴡ: [Our Channel](https://t.me/Benzmovies)</b>\n<b>Instagram: [Subscribe](https://t.me/Benzmovies)</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
@@ -100,9 +100,9 @@ URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
     "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
-SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
+SESSION_NAME = str(environ.get('SESSION_NAME', 'Benzbot'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'LazyPrincess'))
+name = str(environ.get('name', 'Benz'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
